@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>Edit EMPLOYEE..</h1>
+    <form action="/emp/update/<%= empes.eid%>" method="POST">
+      
+        Employee ID<input type="text" name="eid" value="<%= empes.eid %>"><br>
+        Employee name<input type="text" name="ename"value="<%= empes.name %>"><br>
+        Employee salary<input type="text" name="esalary"value="<%=empes.salary%>"><br>
+        
+        <input type="submit" value="update">
+
+    </form>
+</body>
+</html>

@@ -19,6 +19,12 @@
                 <th>
                     Employee salary
                 </th>
+                <th>
+                    Employee Updations
+                </th>
+                <th>
+                    Employee Delete
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -32,9 +38,16 @@
                 </td>
                 <td>
                         <%= emps[i].salary%>
+                </td> 
+                <td><a href="/emp/edit/<%= emps[i].eid%>">edit</a></td>
+                <td>
+                   <a href="/emp/delete/<%= emps[i].eid%>">delete</a>
                 </td>
-            </tr>
-            <%}%>
+
+
+            </tr><%}%>
+           
+
         </tbody>
     </table>
 </body>
